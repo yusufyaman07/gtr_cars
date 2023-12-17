@@ -1,0 +1,246 @@
+@import "_navbar";
+@import "_colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+.skylıne {
+  margin-top: 200px;
+  width: 100%;
+  min-height: 300px;
+  display: inline-block;
+  text-align: center;
+  h1 {
+    font-size: 70px;
+    font-family: "Vina Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+    span {
+      color: $color-red;
+    }
+  }
+  h2 {
+    font-size: 50px;
+    font-family: "Vina Sans", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: $color-gray;
+    span {
+      color: $color-red;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: $color-dark-blue;
+  }
+  .btn {
+    border: none;
+    width: 100px;
+    height: 70px;
+    margin: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $color-red;
+    color: $color-white;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: 0.9s all;
+    }
+  }
+}
+.images {
+  flex-direction: row-reverse;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .images-banner {
+    background-blend-mode: darken;
+    transform: rotatez(-10deg);
+  }
+  .images-track {
+    background-blend-mode: darken;
+  }
+}
+.images-p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+}
+/* */
+.interıor {
+  width: 100%;
+  height: 500px;
+  margin-top: 70px;
+  position: relative;
+  background: linear-gradient(
+      to right,
+      rgba(123, 120, 120, 0.9),
+      rgba(12, 12, 12, 0.8)
+    ),
+    url(/images/interior.jpg);
+  background-position: center;
+  background-size: cover;
+  .write {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 10px;
+      color: $color-white;
+      font-family: "Inter", sans-serif;
+    }
+    p {
+      font-size: 20px;
+      color: $color-white;
+      font-family: "Vina Sans", sans-serif;
+    }
+  }
+
+  .btn {
+    border: none;
+    width: 100px;
+    height: 70px;
+    margin: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $color-red;
+    color: $color-white;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: 0.9s all;
+    }
+  }
+}
+/* */
+.skylıne-cars {
+  padding: 50px;
+  text-align: center;
+  h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    span {
+      color: $color-red;
+    }
+  }
+  .cars {
+    display: inline-block;
+    align-items: center;
+    gap: 10px;
+  }
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Vina Sans", sans-serif;
+    color: $color-dark-blue;
+    span {
+      color: $color-pink;
+    }
+  }
+  .btn {
+    border: none;
+    width: 100px;
+    height: 70px;
+    margin: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $color-blue;
+    color: $color-white;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: 0.9s all;
+    }
+  }
+}
+#skylıne-exterıor {
+  background: linear-gradient(
+      to left,
+      rgba(123, 120, 120, 0.9),
+      rgba(12, 12, 12, 0.8)
+    ),
+    url(/images/exterior-4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* */
+.last-section {
+  background-color: $color-dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 90px;
+  text-align: justify;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  img {
+    width: 6000px;
+    height: 500px;
+  }
+  p {
+    color: $color-white;
+    column-count: 3;
+    column-gap: 20px;
+  }
+}
+.footer {
+    
+  margin: 80px 0 10px;
+  text-align: center;
+  height: auto;
+  hr {
+    background-color: #999;
+    height: 5px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .footer-social a {
+    font-size: 30px;
+    color: $color-dark-blue;
+    padding: 10px;
+  }
+  .footer-social a:hover {
+    color: $color-purple;
+    transition: 0.7s all;
+  }
+  .footer-created {
+    margin-top: 20px;
+  }
+  .footer-created p {
+    font-size: 25px;
+    color: $color-gray;
+
+    
+  }
+  .footer-created p span {
+    color: $color-pink;
+  }
+}
+
+nav .bi-list {
+  display: none;
+}
+
+@media (max-width:800px) {
+    .navbar-right{
+        display: none;
+    }
+    
+}
